@@ -1,7 +1,7 @@
 {
-  "name": "AdventOfCode2020",
+  "name": "advent-of-code",
   "version": "1.0.0",
-  "description": "My solutions to 2020 Advent of Code",
+  "description": "My Advent of Code solutions.",
   "main": "index.js",
   "scripts": {
     "start": "node -r esm index",
