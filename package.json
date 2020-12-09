@@ -1,7 +1,7 @@
 {
-  "name": "advent-of-code",
+  "name": "adventofcode-js",
   "version": "1.0.0",
-  "description": "My Advent of Code solutions.",
+  "description": "My Advent of Code solutions in JavaScript",
   "main": "index.js",
   "scripts": {
     "start": "node -r esm index",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tarikhamilton/AdventOfCode2020.git"
+    "url": "git+https://github.com/tarikhamilton/adventofcode-js.git"
   },
   "keywords": [
     "adventofcode"
@@ -18,9 +18,9 @@
   "author": "Tarik Hamilton",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tarikhamilton/AdventOfCode2020/issues"
+    "url": "https://github.com/tarikhamilton/adventofcode-js/issues"
   },
-  "homepage": "https://github.com/tarikhamilton/AdventOfCode2020#readme",
+  "homepage": "https://github.com/tarikhamilton/adventofcode-js#readme",
   "dependencies": {
     "esm": "^3.2.25",
     "node-fetch": "^2.6.1"
