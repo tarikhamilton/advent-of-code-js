@@ -6,23 +6,33 @@ const puzzleInput = fs
   .trim()
   .split('\n')
 
-let inferredMap = puzzleInput.map((line) =>
+const grid = puzzleInput.map((line) =>
   [...Array(100).keys()].map((x) => line).join('')
 )
 
-const collisionsInLine = (slope, direction = 1, grid) =>
+const collisionsInLine = (slope, grid) =>
   grid.reduce(
     ([count, x, y], row, rowIndex) => {
-      const currentGridPos = row[rowIndex * slope[0]]
+      const currentRow = rowIndex + 1
+      const currentGridPos = row[x - 1]
       const isTree = currentGridPos === '#'
 
-      return rowIndex + 1 === y
+      return currentRow === y
         ? [count + +isTree, x + slope[0], y + slope[1]]
         : [count, x, y]
     },
     [0, 1, 1]
   )
 
-console.log('Day 3: ', {
-  collisions: collisionsInLine([3, 1], -1, inferredMap),
+console.log('Day 3 Answer: ', {
+  part1: collisionsInLine([3, 1], grid)[0],
+  part2: [
+    collisionsInLine([1, 1], grid),
+    collisionsInLine([3, 1], grid),
+    collisionsInLine([5, 1], grid),
+    collisionsInLine([7, 1], grid),
+    collisionsInLine([1, 2], grid),
+  ]
+    .map((x) => x[0])
+    .reduce((p, n) => p * n),
 })
