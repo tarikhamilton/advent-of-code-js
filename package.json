@@ -4,6 +4,8 @@
   "description": "My solutions to 2020 Advent of Code",
   "main": "index.js",
   "scripts": {
+    "start": "node -r esm index",
+    "dev": "npx nodemon -r esm index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

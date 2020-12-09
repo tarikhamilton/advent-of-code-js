@@ -24,9 +24,9 @@ const collisionsInLine = (slope, grid) =>
     [0, 1, 1]
   )
 
-console.log('Day 3 Answer: ', {
-  part1: collisionsInLine([3, 1], grid)[0],
-  part2: [
+export default [
+  collisionsInLine([3, 1], grid)[0],
+  [
     collisionsInLine([1, 1], grid),
     collisionsInLine([3, 1], grid),
     collisionsInLine([5, 1], grid),
@@ -35,4 +35,4 @@ console.log('Day 3 Answer: ', {
   ]
     .map((x) => x[0])
     .reduce((p, n) => p * n),
-})
+]

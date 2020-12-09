@@ -50,5 +50,4 @@ const answer2 = () =>
     { answers: [] }
   ).answers[0]
 
-console.log('Day 1, Answer 1:', answer1())
-console.log('Day 1, Answer 2:', answer2())
+export default [answer1(), answer2()]

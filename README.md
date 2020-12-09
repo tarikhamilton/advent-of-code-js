@@ -1,6 +1,6 @@
-# adventofcode2020
-Dumping my Advent of Code solutions here. Keeping this private until it is over.
+# AdventOfCode2020
 
-Get answers like this:
+My [Advent of Code 2020](https://adventofcode.com/2020) solutions.
 
-`node -esm 01/index`
+- `npm start` // See my answers!
+- `npm run dev` // Develop answers! It's just see answers with a watcher.

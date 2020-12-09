@@ -27,4 +27,4 @@ const count = (data, fn) => data.reduce((t, val) => +fn(val) + t, 0)
 const validPasswords = count(data, isValid)
 const actuallyValidPasswords = count(data, isActuallyValid)
 
-console.log('Day 2', { validPasswords, actuallyValidPasswords })
+export default [validPasswords, actuallyValidPasswords]
