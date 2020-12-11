@@ -1,3 +1,9 @@
-;[...Array(4).keys()].forEach((n) => {
-  console.log(`Day ${n + 1}`, require(`./2020/0${n + 1}/index`).default)
+import fs from 'fs'
+import path from 'path'
+
+fs.readdirSync('2020').forEach((n) => {
+  console.log(
+    `Day ${('0' + n).slice(-2)}`,
+    require(`./2020/${('0' + n).slice(-2)}/index`).default
+  )
 })
