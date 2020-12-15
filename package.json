@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node -r esm index",
     "dev": "npx nodemon -r esm index",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",

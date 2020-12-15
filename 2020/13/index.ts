@@ -47,6 +47,6 @@ const partOne = () => {
   return busTravelTime(busId, time, busDepartTime)
 }
 
-const partTwo = () => input
+const partTwo = () => null
 
 export default [partOne(), partTwo()]
